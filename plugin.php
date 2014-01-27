@@ -22,7 +22,7 @@ class PhileInlineImage extends \Phile\Plugin\AbstractPlugin implements \Phile\Ev
 			// this parse happens after the markdown
 			// which means that the potential image is wrapped
 			// in p tags
-			$regex = "/(\n<p>)(.*?)\.(jpg|jpeg|png|gif|webp)+(<\/p>)/i";
+			$regex = "/(\n<p>)(.*?)\.(jpg|jpeg|png|gif|webp|svg)+(<\/p>)/i";
 			// main feature of the plugin, wrapping image names in HTML
 			$replace = "\n".'<'.$this->settings['wrap_element'].' class="'.$this->settings['wrap_class'].'">'."\n\t".'<img src="'.$path.'$2.$3">'."\n".'</'.$this->settings['wrap_element'].'>';
 			// add the modified content back in the data
