@@ -48,4 +48,4 @@ return array(
 
 You can see how the plugin applies the config data to the HTML output.
 
-The `images_dir` should be relative to the root of the Phile installation (the constant `ROOT\_DIR` will contain your root path).
+The `images_dir` should be relative to the root of the Phile installation (the constant `ROOT_DIR` will contain your root path).
