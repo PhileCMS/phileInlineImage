@@ -2,7 +2,7 @@
 /**
  * Plugin class
  */
-namespace Phile\Plugin\Phile\Inlineimage;
+namespace Phile\Plugin\Phile\InlineImage;
 use Phile\Exception;
 
 /**

@@ -5,14 +5,14 @@ A plugin for [Phile](https://github.com/PhileCMS/Phile) to take an image name an
 
 ### 1.1 Installation (composer)
 ```
-php composer.phar require phile/inlineimage:*
+php composer.phar require phile/inline-image:*
 ```
 
 ### 1.2 Installation (Download)
 
 * Install the latest version of [Phile](https://github.com/PhileCMS/Phile)
-* Clone this repo into `plugins/phile/inlineimage`
-* add `$config['plugins']['phile\\inlineimage'] = array('active' => true);` to your `config.php`
+* Clone this repo into `plugins/phile/inlineImage`
+* add `$config['plugins']['phile\\inlineImage'] = array('active' => true);` to your `config.php`
 
 ### Usage
 
