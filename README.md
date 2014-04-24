@@ -3,11 +3,16 @@ phileInlineImage
 
 A plugin for [Phile](https://github.com/PhileCMS/Phile) to take an image name and generate a wrapped image tag.
 
-### Installation
+### 1.1 Installation (composer)
+```
+php composer.phar require phile/inlineimage:*
+```
+
+### 1.2 Installation (Download)
 
 * Install the latest version of [Phile](https://github.com/PhileCMS/Phile)
-* Clone this repo into `plugins/phileInlineImage`
-* add `$config['plugins']['phileInlineImage'] = array('active' => true);` to your `config.php`
+* Clone this repo into `plugins/phile/inlineimage`
+* add `$config['plugins']['phile\\inlineimage'] = array('active' => true);` to your `config.php`
 
 ### Usage
 

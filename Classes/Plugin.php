@@ -1,9 +1,14 @@
 <?php
+/**
+ * Plugin class
+ */
+namespace Phile\Plugin\Phile\Inlineimage;
+use Phile\Exception;
 
 /**
  * Add custom variables in your content before it is parsed.
  */
-class PhileInlineImage extends \Phile\Plugin\AbstractPlugin implements \Phile\EventObserverInterface {
+class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\EventObserverInterface {
 
 	public function __construct() {
 		\Phile\Event::registerEvent('after_parse_content', $this);
