@@ -12,7 +12,14 @@ php composer.phar require phile/inline-image:*
 
 * Install the latest version of [Phile](https://github.com/PhileCMS/Phile)
 * Clone this repo into `plugins/phile/inlineImage`
-* add `$config['plugins']['phile\\inlineImage'] = array('active' => true);` to your `config.php`
+
+### 2. Activation
+
+After you have installed the plugin. You need to add the following line to your `config.php` file:
+
+```
+$config['plugins']['phile\\inlineImage'] = array('active' => true);
+```
 
 ### Usage
 
