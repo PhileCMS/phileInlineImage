@@ -18,7 +18,7 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 		if ($eventKey == 'after_parse_content') {
 			// check and see if the folder exists
 			if (!is_dir(ROOT_DIR . $this->settings['images_dir'])) {
-				throw new Exception("The path defined the PhileInlineImage config does not exists or is not a directory.");
+				throw new Exception("The path ".$this->settings['images_dir']." in the PhileInlineImage config does not exists or is not a directory.");
 			}
 			// store the starting content
 			$content = $data['content'];
