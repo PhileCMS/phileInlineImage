@@ -37,7 +37,7 @@ icon.png {.foo-class}
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ```
 
-This is what will be output. You can see that `icon.png` was wrapped with some HTML:
+This is what will be output. You can see that `icon.png` was wrapped with some HTML and the container of the second `icon.png` was given a class:
 
 ```html
 <h2>This is a Sub Page</h2>
