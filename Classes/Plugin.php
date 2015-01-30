@@ -27,9 +27,10 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 			// this parse happens after the markdown
 			// which means that the potential image is wrapped
 			// in p tags
-			$regex = "/(<p>)(.*?)\.(jpg|jpeg|png|gif|webp|svg)+(<\/p>)/i";
+			// optional parse for markdown extra style classes
+			$regex = "/(<p>)(.*?)\.(jpg|jpeg|png|gif|webp|svg)+(\s?\{\.(.*\s?.*)?\})?(<\/p>)/i";
 			// main feature of the plugin, wrapping image names in HTML
-			$replace = "\n" . '<' . $this->settings['wrap_element'] . ' class="' . $this->settings['wrap_class'] . '">' . "\n\t" . '<img src="' . $path . '$2.$3">' . "\n" . '</' . $this->settings['wrap_element'] . '>';
+			$replace = "\n" . '<' . $this->settings['wrap_element'] . ' class="' . $this->settings['wrap_class'] . ' $5">' . "\n\t" . '<img src="' . $path . '$2.$3">' . "\n" . '</' . $this->settings['wrap_element'] . '>';
 			// add the modified content back in the data
 			$data['content'] = preg_replace($regex, $replace, $content);
 		}
