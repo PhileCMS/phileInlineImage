@@ -32,15 +32,20 @@ This is page.md in the "sub" folder.
 
 icon.png
 
+icon.png {.foo-class}
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ```
 
-This is what will be output. You can see that `icon.png` was wrapped with some HTML:
+This is what will be output. You can see that `icon.png` was wrapped with some HTML and the container of the second `icon.png` was given a class:
 
 ```html
 <h2>This is a Sub Page</h2>
 <p>This is page.md in the "sub" folder.</p>
 <p class="content-image">
+  <img src="http://localhost:8888/phile/content/images/icon.png">
+</p>
+<p class="content-image foo-class">
   <img src="http://localhost:8888/phile/content/images/icon.png">
 </p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
